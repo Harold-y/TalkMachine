@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.chengbing.dao.WeiboSenti100kMapper">
+    <select id="selectRandom" resultType="org.chengbing.entity.WeiboSenti100k">
+        select * from weibo_senti_100k order by rand() limit 0, 1
+    </select>
+</mapper>
